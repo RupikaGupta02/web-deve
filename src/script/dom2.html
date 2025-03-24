@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <button class="btn btn-primary" data-bs-target="#modal" data-bs-toggle="modal">ADD PRODUCT</button>
+    
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="lbltitle"> ADD PRODUCT</h2>
+
+                    <button class="btn btn-close " data-bs-dismiss="modal"></button>
+
+                </div>
+
+                <div class="modal-body ">
+                    <dl>
+                        <dt>NAME</dt>
+                        <dd>
+                            <input type="text" id="txtname "class="form-control" >
+                        </dd>
+                        <dt>PRICE</dt>
+                        <dd>
+                            <input type="text" class="form-control" >
+                        </dd>
+                        
+                        <dt>Shipped to </dt>
+                        <dd><input type="text" placeholder="select city"> 
+
+                        </dd>
+                        <dt>
+                            Stock
+                        </dt>
+                        <dd>
+                            <input type="text" class="form-control">
+                        </dd>
+                    </dl>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Register</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

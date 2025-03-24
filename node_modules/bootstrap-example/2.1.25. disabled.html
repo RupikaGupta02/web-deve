@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <title>Document</title>
+    <style>
+        textarea:disabled{
+            cursor: not-allowed;
+            background-color: lightgray;
+        }
+        textarea:readonly{
+            cursor: not-allowed;
+            background-color: lightpink;
+        }
+        input+span{
+            color:red;
+        }
+        input~button{
+            display: none;
+
+        }
+        .terms:checked+span{
+            color: green;
+        }
+        .terms:checked~button{
+            display: inline; /* I used block or something else as display block and the submit button was apperaing but when i used display as none then only tick of i accept ca,e but no sumbit button option*/ 
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <dl class="m-4">
+        <dt><h1>TextArea</h1></dt>
+        <dd>
+            <!-- <textarea name="" id="" row=""  col="40" disabled=""> -->
+            <textarea name="" id="" row="4"  col="50" readonly="">
+                our terms and conditions
+            </textarea>
+        </dd>
+
+        <div>
+        <input type="checkbox" class="terms form-check-input" >
+         &nbsp;<span>I Accept</span>
+        <br><br>
+        <button>Submit</button>
+
+    </dl>
+</body>
+</html>

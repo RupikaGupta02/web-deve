@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        img{
+           width: 100px;
+              height: 100px;
+              transition: 6s
+
+        }
+        img:active{
+            width: 200px;
+            height: 200px;
+            transition: 5s;
+        }  
+        </style>
+
+        <script type="text/javascript">
+            function setEffect(){
+                //logic to write a function
+                console.log("control entering into setEffect function")
+                document.querySelectorAll("h1").style.color ="red";      
+                document.querySelectorAll("h1").style.fontFamily ="Arial"; 
+                console.log("control leaving the setEffect function")
+            }
+            function resetEffect(){
+                //logic to write a function
+                console.log("control entering into resetEffect function")
+                document.querySelectorAll("h1").style.color ="black";      
+                document.querySelectorAll("h1").style.fontFamily ="Times New Roman"; 
+                console.log("control leaving the resetEffect function")
+            } 
+
+            </script>
+            <style type="text/css">
+              
+                h1:hover{
+                    color: red;
+                    font-family: Arial;
+                }
+    </style>
+</head>
+<body>
+    <h1 onmouseover="setEffect()" onmouseout="resetEffect()">welcome to css</h1>
+ 
+         <img src="../public/images/15plus.jpeg">
+
+    
+</body>
+</html>

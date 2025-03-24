@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul
+
+    </style>
+</head>
+<body>
+    <button type="button">Add Name</button>
+    <script type="text/javascript">
+
+        //array of elements
+        let names = ["SACHIN", "SAURAV", "DRAVID", "ROHIT", "GANGULY"];
+
+
+        // Create an element
+
+        let ul = document.createElement("ul");
+
+        let index = 0;
+
+        document.querySelector("button"). addEventListener ("click", function(){
+
+        //logic to process
+        let li = document.createElement("li");
+        if(index < name.length){
+            //add the element into li and project
+
+        li.textContent = name[index];
+        ul.appendChild(li);
+        index++;  // to move to other element.
+
+        }
+        else{
+            alert(no more elements to display);
+
+        }
+    })
+
+    </script>
+</body>
+</html>

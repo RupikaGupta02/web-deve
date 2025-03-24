@@ -1,0 +1,28 @@
+.data{
+    display: flex;
+    
+    
+    grid-template-columns: 4fr 4fr 4fr 4fr ;
+    background-color: whitesmoke;
+    color:black;
+    padding-left: 15px;
+    font-family:arial;
+    font-weight: 15px;
+
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.icons{
+    color: black;
+}
+.ll{
+    padding-top: 30px;
+    text-align:justify;
+    
+
+
+}

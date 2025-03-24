@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .container{
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+            margin: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .container:hover{
+            animation: coolStuff 5s ease-in-out infinite; /*animation name, duration, timing function, iteration count, direction, fill mode, play state, delay*/
+        }
+      
+        /*@keyframes coolStuff{
+            0%{
+                transform: rotateX('angle');
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        } */
+        @keyframes {
+            0%{
+               transition-duration: 1s;
+               translate: ;
+            }
+            50%{
+                transform: translateY(100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" >
+        keyframes
+    </div>
+    <div>
+
+       <marquee behavior="alternate" direction="left" scrollamount="10">
+            Virat kohli.
+       </marquee>
+       </div>
+    </html>
+</html>

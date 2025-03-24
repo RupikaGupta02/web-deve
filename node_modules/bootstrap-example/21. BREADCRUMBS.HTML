@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            margin-left: -10px;
+            flex-direction: row;
+        }
+        li::after{
+            content: " >> ";
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        li:last-child::after{
+            content: " ";    
+        
+        }
+        li:last-child{
+            color: red;
+        }
+        p::selection{
+            color: red;
+            background-color: yellow;
+        
+        }
+        img::selection{
+            color: red;
+            background-color: yellow;
+        
+        } 
+      
+        h1:lang(en){
+            color: red;
+        }
+        h3:lang(hi){
+            color: green;
+
+        }
+        h4:lang(sp){
+            color: darkslateblue;
+            font-size: 25px
+        }
+    </style>
+</head>
+<body>
+     <ol>
+        <li>html</li>
+        <li>js</li>
+        <li>jquery</li>
+        <li>node.js</li>
+        <li>js</li>
+        <li>web</li>
+        <li>development</li>
+    </ol>
+    <div>
+        <p style="text-align: justify; font-family: Arial, sans-serif; font-size: 20px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima numquam! Placeat quisquam molestiae quasi deleniti, autem, quas, natus laboriosam distinctio quibusdam numquam impedit nulla! Quae sint aliquam nihil optio!
+        </p>
+    </div>
+    <div>
+        <img src="../public/images/starshopping.jpg" alt="" style="height: 100px ; width: 100px;">
+    </div>
+    <input type="email"  placeholder="enter email" style="color: blue;"></body> 
+    <form action="">
+        <dl>
+            <dt>
+                Firstname
+            </dt>
+            <dd>
+                <input type="text" name="txtName" id="">
+            </dd>
+
+            <dt>
+                Lastname
+            </dt>
+            <dd>
+                <input type="text" name="txtName" id="">
+            </dd>
+
+            <dt>
+                Password
+            </dt>
+            <dd>
+                <input type="text" name="txtName" id="">
+            </dd>
+             <button>Submit</button>
+
+        </dl>
+        <div>
+            <h1 lang="en">Hello</h1>
+            <h3 lang="hi">नमस्ते</h3>
+            <h4 lang="sp">Ciao</h4>
+            
+        </div>
+    </form>
+</html>

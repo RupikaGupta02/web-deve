@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function deleterecord(){
+            flag = confirm("do you want to delete?");
+            if(flag)
+            document.writeln("h1 style = 'color:red; text-align:center;'
+            record deleted successfully </h1>");
+            document.write("<a href=./confirm-code.html'>click here </a>")
+            else{
+                document.write("<h1 style='color:red;'>
+                    you pressed cancel button</h1>");
+                </h1>
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="deleterecord()">
+        onclick
+    </button>
+    
+</body>
+</html>

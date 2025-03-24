@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            background-color: rosybrown;
+            transition-duration: 3s;
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            transition: transform 2s steps(5); /*steps is used to make the transition in steps. 5 is the number of steps and end is the direction of the steps.*/
+        }
+        .box:hover{
+            background-color: burlywood;
+            width: 800px;
+            transition: all 3s steps(5) ; /* all transition proerty we gave in single line as all duration, property, delay.*/
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

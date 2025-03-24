@@ -1,0 +1,14 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+h1:lang(en){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+}
+p:lang(en){
+    color:black;
+}
+h1:lang(kan){
+    color:aqua;
+}

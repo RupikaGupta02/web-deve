@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Loan EMI Calculator</title>
+    <style type="text/css">
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 50px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        body {
+            border: 2px solid black;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .input-group {
+            margin: 15px 0;
+        }
+        input[type="text"], input[type="number"] {
+            width: 120px;
+            padding: 5px;
+            text-align: center;
+        }
+        input[type="range"] {
+            width: 70%;
+        }
+        button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header>
+        Personal Loan EMI Calculator
+    </header>
+
+    <div class="input-group">
+        <label>Amount you need ₹</label>
+        <input type="number" id="loanAmount" value="200000">
+        <input type="range" id="loanAmountRange" min="50000" max="1000000" step="1000" value="200000">
+    </div>
+
+    <div class="input-group">
+        <label>For <input type="number" id="loanTenure" value="2"> years</label>
+        <input type="range" id="loanTenureRange" min="1" max="5" step="1" value="2">
+    </div>
+
+    <div class="input-group">
+        <label>Interest rate (%)</label>
+        <input type="number" id="interestRate" value="12">
+        <input type="range" id="interestRateRange" min="10.25" max="18.45" step="0.01" value="12">
+    </div>
+
+    <button onclick="calculateEMI()">Calculate</button>
+
+    <footer id="result">
+        Your EMI Amount is 2067.58 for 24 months
+    </footer>
+
+    <script type="text/javascript">
+        // Sync sliders with text inputs
+        document.getElementById("loanAmountRange").addEventListener("input", function() {
+            document.getElementById("loanAmount").value = this.value;
+        });
+        document.getElementById("loanAmount").addEventListener("input", function() {
+            document.getElementById("loanAmountRange").value = this.value;
+        });
+
+        document.getElementById("loanTenureRange").addEventListener("input", function() {
+            document.getElementById("loanTenure").value = this.value;
+        });
+        document.getElementById("loanTenure").addEventListener("input", function() {
+            document.getElementById("loanTenureRange").value = this.value;
+        });
+
+        document.getElementById("interestRateRange").addEventListener("input", function() {
+            document.getElementById("interestRate").value = this.value;
+        });
+        document.getElementById("interestRate").addEventListener("input", function() {
+            document.getElementById("interestRateRange").value = this.value;
+        });
+
+        // EMI Calculation
+        function calculateEMI() {
+            let principal = parseFloat(document.getElementById("loanAmount").value);
+            let tenure = parseFloat(document.getElementById("loanTenure").value) * 12; // Convert years to months
+            let interestRate = parseFloat(document.getElementById("interestRate").value) / 12 / 100; // Monthly rate
+
+            let emi = (principal * interestRate * Math.pow(1 + interestRate, tenure)) / 
+                      (Math.pow(1 + interestRate, tenure) - 1);
+
+            if (isNaN(emi) || emi < 0) {
+                document.getElementById("result").innerHTML = "Invalid Input!";
+            } else {
+                document.getElementById("result").innerHTML = Your EMI Amount is <span style="color: red;">${emi.toFixed(2)}</span> for ${tenure} months;
+            }
+        }
+    </script>
+</body>
+</html>

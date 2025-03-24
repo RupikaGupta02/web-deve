@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+    <style type="text/css">
+      p[class|="effects"]{
+        color: aqua;
+      }
+      h1[class$="para"]{
+        color: aquamarine;
+      }
+      span:hover{
+        transform: scale(1.1);
+      }
+      button:hover{
+        transform: scale(2);
+      
+      }
+      button:active{
+        transform: scale;
+      }
+      *{
+        color: crimson;
+        margin: 0;
+
+      }
+      .linear-gradient-example{
+        background: linear-gradient(90deg,red,yellow , green);
+      }
+      .radial-gradient-example{
+        background: radial-gradient(circle at center, blue, white, pink);
+      }
+      .red{
+        background-color: hsl(0,100%,50%);
+      }
+      .green{
+        background-color: hsl(128,100%, 50%);
+      }
+      .blue{
+        background-color: hsl(240, 50%, 50%);
+      }
+      .pastel{
+        background-color: hsl(300,50%, 75%);
+      }
+      ol{
+        display: block;
+        list-style-type:decimal-leading-zero;   /*remove numbering in orderedlist go for none */
+        order: 1px solid black;
+        overflow: scroll;
+      }
+      ul{
+        list-style-type: none;
+        list-style: url();
+      }
+      a:visited{
+        color: black;
+      }
+      a:active{
+        color:crimson;
+      }
+    </style>
+</head>
+<body>
+    <input type="radio"name="gender" >
+    <label for="gender">female</label>
+    <label for="password" name="password">
+    <button type="submit">submit</button>
+    </label>
+    <input type="checkbox" name=""value=""checked>
+    <label for="" >
+        <textarea name="enter the data" id="" placeholder="reviews" rows="6" > amazing</textarea>
+    </label>
+    <select name="list" id="">
+        <option value="languages" disabled>html</option>
+        <option value="">css</option>
+        <option value="">js</option>
+        <option value="">cp</option>
+    </select>
+    <progress max="">ghhuh</progress>
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="txt" id="">
+     <h2 class="ms-3">wsdwd</h2> <!--left margin means start  -->
+    <form class="ms-5 p-4 fs-3 fst-italic fw-bolder text-uppercase text-bg-danger text-end d-none" >wdds</form>  
+
+    <img src="/public/images/bookstore2.htm" alt="" class="">
+    <button class="btn btn-primary">save</button>
+    <br><br>
+
+    <div class="input-group mb-3">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+    Options
+  </button>
+</div>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+  </ul>
+  <input type="text" class="form-control" placeholder="Type something">
+  <p class="effects">para1</p>
+  <h1 class="para">para2</h1>
+  <span>rupika gupta</span>
+  <br><br>
+  <button type="reset" class="btn btn-danger">reset</button>
+
+  <h5>universal selector</h5>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit laborum saepe repellat dolor, optio quaerat ipsa, modi neque odio unde doloribus veniam suscipit ipsum velit fugiat libero et quam?</p>
+  <div class="linear-gradient-example">linear gradient</div>
+
+  <div class="radial-gradient-example">radial</div>
+
+  <div class="red">red</div>
+  <div class="green">green</div>
+  <div class="blue">blue</div>
+  <div class="pastel">pastel</div>
+
+  <div class="alert alert-dismissible">
+    <h2 class="alert-heading">alerts</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente, officia ad consectetur officiis maiores? Totam aliquam fugiat quis quod fugit distinctio culpa quos. Dolores dolorum eligendi modi minus veritatis.
+      </p>
+
+  <a href="#" class="alert-link">
+    <button class="btn btn-dark" data-bs-dismiss="alert">OK</button>
+  </a>
+  </div>
+
+  <div class="alert alert-success alert-dismissible"></div>
+  <button class="btn btn-info" data-bs-dismiss="alert"></button>
+  <h3>alerts</h3>
+  <p>form submission</p>
+  <a href="#" class="alert-link">need help?</a>
+
+  <ul class="pagination pagination-lg">
+    <li class="page-item disabled text bg-danger">
+      <a href="#" class="page-link">
+        <span>&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link">
+        <span>1</span>
+      </a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link">
+        <span>2</span>
+
+      </a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link">
+        <span>3</span>
+        </a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">
+            <span>4</span>
+            </a>
+            </li>
+
+            <li class="page-item">
+              <a href="#" class="page-link">
+                <span>5</span>
+                </a>
+                </li>
+
+                <li class="page-item">
+                  <a href="#" class="page-link">
+                    <span>&raquo;</span>
+                    </a>
+                    </li>
+  </ul>
+
+<ol type="A" start="5"> /*start defines the numbering level to strt with*/
+<li>web server</li>
+<li>web site</li>
+<li>web page</li>
+<li>web links</li>
+</ol>
+
+<li>frontend</li>
+  <ol type="a"start="2">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVASCRIPT</li>
+  </ol>
+
+<ul type="disc" start="2">  /*her numbering won't work as it is bulleted list*/
+  <li>web server</li>
+  <li>web site</li>
+</ul>
+
+<ul>
+  <li>&laquo;</li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>&raquo;</li>
+</ul>
+
+<img src="../public/images/15plus.jpeg" class="img-fluid" width="50%" alt="Responsive-image">
+
+<a href="javascript:window.open('public/image/15plus.jpeg, _blank', 'width=500 height = 300')">image in new window</a>
+
+<a href='javascript:void()'>empty link</a>
+<a href='javascript:void(location.href='>operational empty link</a>
+
+<a href="../public/doc/Tutorial sheet.pdf" target="_self">browser open same page</a>
+
+<input type="text" name="name" placeholder="enter text 10-20 word limit" >
+
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[class|="Effects"]{ /* when i uesd ^ then whrerver is effects it turned out to be red.*/
+            color: red;
+        } /*when i used | then only Effects turned out to be red and Effects with- became red */
+        
+        p[class^="Para"]{  /*when i used $ then para starting from capital P BECAME GREEEN*/
+            color: green;
+        } /* when  i used ^ then Capital P first starting it became green */
+    </style>
+</head>
+<body>
+   <p class="Effects">para-1</p>
+   <p class="ParaEffects">para-2</p>
+   <p class="EffectsPara">para-3</p>
+   <p class="Para-Effects">para-4</p>
+   <p class="Effects-para">para-5</p>
+   <p class="Effects Para">para-6</p>
+   <p class="Para Effects text">para-7</p>
+   <p class="Effects-div">para-8</p>
+</body>
+</html>

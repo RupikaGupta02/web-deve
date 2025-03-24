@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calc(50vw) Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .box {
+      background-color: #4caf50;
+      color: white;
+      padding: 20px;
+      width: calc(50vw - 40px); /* 50% of viewport width minus 40px */
+      margin: 20px auto;
+      border: 5px solid white;
+    }
+
+    .text {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Box Example with calc(50vw)</h1>
+  <div class="box">
+    This box is 50% of the viewport width minus 40px. Resize your browser to see it in action!
+  </div>
+</body>
+</html>

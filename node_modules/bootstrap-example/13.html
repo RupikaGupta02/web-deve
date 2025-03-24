@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .container > p{
+            color: blue; /*container ke undar p wala sare child blue color ke hogye*/ 
+
+        }
+        span+p{
+            color: green ;/* maybe to tackle with second chld we use + */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 3px dotted black;
+            width:100px
+        } 
+        span~p{
+             color: aquamarine;  <!--generic siblings-->
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+        <h1>Good Morning</h1>
+        <p>Hello</p>
+        <p>Hey</p>
+        <p>NAMASTE</p>
+        <p>LIVE LAUGH LOVE</p>
+<div class="sample">
+    <span>hwgej</span>
+    <p>Rupika</p>
+
+</div>
+<dl>
+    <dt>username</dt>
+    <dd>
+        <input type="username" class="type">
+    </dd>
+    <dt>
+        password
+    </dt>
+    <dd>
+        <input type="password" class="type">
+    </dd>
+</dl>
+ <br><br>
+<input type="button" value="reset">
+<br><br>
+<input type="button" value="submit">
+
+
+<p>para -1</p>
+<p id="p1-1">para2</p>
+<p>rupika</p>
+<img><br>
+<img src="public/images/amazon.jpg" alt="image" width="200" height="200">
+
+</div>
+</body>
+</html>
